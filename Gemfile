@@ -54,6 +54,7 @@ gem "haml-rails", "~> 2.0"
 gem 'html2haml'
 
 gem "devise"
+gem 'cancancan'
 gem "rolify"
 
 group :development, :test do
