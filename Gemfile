@@ -52,6 +52,7 @@ gem "bootsnap", require: false
 gem 'haml'
 gem "haml-rails", "~> 2.0"
 gem 'html2haml'
+gem 'sass-rails'
 
 gem "devise"
 gem 'cancancan'
