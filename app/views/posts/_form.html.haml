@@ -1,0 +1,15 @@
+= form_with(model: @post) do |form|
+  - if @post.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@post.errors.count, "error")
+        prohibited this post from being saved:
+      %ul
+        - @post.errors.each do |error|
+          %li= error.full_message
+  = form.label :title, "Title:"
+  = form.text_field :title
+  = form.label :text, "Text:"
+  = form.text_area :text
+  .actions
+    = form.submit
